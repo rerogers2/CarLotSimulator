@@ -26,6 +26,8 @@ namespace CarLotSimulator
             Car1.HonkNoise = "Honk";
             Car1.IsDriveable= true;
             lot.CarList.Add(Car1);
+            CarLot.numberOfCars++;
+            Console.WriteLine($"The number of cars in the carlot is currently: {CarLot.numberOfCars}");
 
             Car1.MakeEngineNoise();
             Car1.MakeHonkNoise();
@@ -38,6 +40,8 @@ namespace CarLotSimulator
             Car2.HonkNoise = "beep";
             Car2.IsDriveable = false;
             lot.CarList.Add(Car2);
+            CarLot.numberOfCars++;
+            Console.WriteLine($"The number of cars in the carlot is currently: {CarLot.numberOfCars}");
 
             Car2.MakeEngineNoise();
             Car2.MakeHonkNoise();
@@ -50,6 +54,8 @@ namespace CarLotSimulator
             Car3.HonkNoise = "meeeeeeep";
             Car3.IsDriveable = true;
             lot.CarList.Add(Car3);
+            CarLot.numberOfCars++;
+            Console.WriteLine($"The number of cars in the carlot is currently: {CarLot.numberOfCars}");
 
             Car3.MakeEngineNoise();
             Car3.MakeHonkNoise();
@@ -58,10 +64,16 @@ namespace CarLotSimulator
             // re-initialized all 3 cars with new variable names on one line
             Car Car4 = new Car() { Year = 2019, Make = "Honda", Model = "CRV", EngineNoise = "Vroom", HonkNoise = "Honk", IsDriveable = true};
             lot.CarList.Add(Car4);
+            CarLot.numberOfCars++;
+            Console.WriteLine($"The number of cars in the carlot is currently: {CarLot.numberOfCars}");
             Car Car5 = new Car() { Year = 2005, Make = "Ford", Model = "Focus", EngineNoise = "grrrrrr", HonkNoise = "beep", IsDriveable = false };
             lot.CarList.Add(Car5);
+            CarLot.numberOfCars++;
+            Console.WriteLine($"The number of cars in the carlot is currently: {CarLot.numberOfCars}");
             Car Car6 = new Car() { Year = 1969, Make = "Chevrolet", Model = "Corvette", EngineNoise = "pitterpatter", HonkNoise = "meeeeeeep", IsDriveable = true };
             lot.CarList.Add(Car6);
+            CarLot.numberOfCars++;
+            Console.WriteLine($"The number of cars in the carlot is currently: {CarLot.numberOfCars}");
 
             Car4.MakeEngineNoise();
             Car4.MakeHonkNoise();
@@ -73,10 +85,16 @@ namespace CarLotSimulator
             // Constructor Initialization
             Car Car7 = new Car(2019,"Honda","CRV","Vroom","Honk",true);
             lot.CarList.Add(Car7);
+            CarLot.numberOfCars++;
+            Console.WriteLine($"The number of cars in the carlot is currently: {CarLot.numberOfCars}");
             Car Car8 = new Car(2005, "Ford", "Focus", "grrrrrr", "beep", false);
             lot.CarList.Add(Car8);
+            CarLot.numberOfCars++;
+            Console.WriteLine($"The number of cars in the carlot is currently: {CarLot.numberOfCars}");
             Car Car9 = new Car(1969, "Chevrolet", "Corvette", "pitterpatter", "meeeeeeep", true);
             lot.CarList.Add(Car9);
+            CarLot.numberOfCars++;
+            Console.WriteLine($"The number of cars in the carlot is currently: {CarLot.numberOfCars}");
 
             Car7.MakeEngineNoise();
             Car7.MakeHonkNoise();
